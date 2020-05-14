@@ -7,10 +7,15 @@
     {% endblock %}
 </head>
 <body>
-    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="content">
+        {% block content %}
+        <h1>Welcome !</h1>
+        <p>Click <a href="/login">here</a> to log in.</p>
+        
+        {% endblock %}</div>
     <div id="footer">
         {% block footer %}
-        &copy; Copyright 2020 by <a href="http://domain.invalid/">Caitlin</a>.
+        &copy; Copyright 2020 by <a href="#">Caitlin</a>.
         {% endblock %}
     </div>
 </body>
