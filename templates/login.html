@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Log in</h1>
+        <form action="" method="post">
+            <input type="email" id="email" placeholder="Your Email" name="email" value="{{
+                request.form.email }}">
+            <input type="password" id="password" placeholder="Password" name="password" value="{{
+                request.form.password }}">
+            <input type="submit" value="Login">
+        </form>
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+        <br>
+{% endblock %}
